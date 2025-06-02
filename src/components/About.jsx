@@ -1,4 +1,4 @@
-import aboutImg from "../assets/mpic.jpg";
+import aboutImg from "../assets/mypic2.png";
 import { ABOUT_TEXT } from "../constants";
 import { motion } from "framer-motion";
 
@@ -15,6 +15,7 @@ function About() {
       },
     },
   });
+
   return (
     <div className="border border-neutral-900 pb-4">
       <h1 className="my-20 text-center text-4xl">
@@ -33,7 +34,7 @@ function About() {
         >
           <div className="flex items-center justify-center">
             <img
-              className="rounded-2xl shadow-lg shadow-gray-500 h-[78vh]"
+              className="w-full max-w-xs sm:max-w-sm md:max-w-md object-contain mt-[-10rem] lg:mt-[-9rem]"
               src={aboutImg}
               alt="about"
             />

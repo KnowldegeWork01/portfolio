@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/ProfilePic.jpg";
+import profilePic from "../assets/mypic1.png";
 import { motion } from "framer-motion";
 import Resume from "../assets/Apoorv_Resume.pdf";
 const container = (delay) => ({
@@ -34,9 +34,9 @@ function Hero() {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
+              className="pb-16 text-5xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
             >
-              Apoov Kumar Gupta
+              Apoorv Kumar Gupta
             </motion.h1>
             <motion.span
               variants={container(0.5)}
@@ -50,7 +50,7 @@ function Hero() {
               variants={container(1)}
               initial="hidden"
               animate="visible"
-              className="my-2 max-w-xl py-6 font-light tracking-tight"
+              className="my-2 max-w-xl py-6 font-light tracking-tight" 
             >
               {HERO_CONTENT}
             </motion.p>
@@ -58,30 +58,28 @@ function Hero() {
               <a
                 href={Resume}
                 download="Apoorv_Resume.pdf"
-                className="w-6 h-6 md:w-8 md:h-8"
+                className="w-6 h-6 md:w-8 md:h-8 "
               >
                 <button className="text-[#8892b0] bg-[#312e2f1a] group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#f9f9fa] ">
-                    Download Resume
+                  Download Resume
                 </button>
               </a>
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 lg:p-8">
-          <div className="flex justify-center h-[75vh]">
+        <div className="w-full lg:w-1/2 lg:p-8 mt-5 lg:mt-0">
+          <div className="flex justify-center  sm:mb-0 sm:h-[45vh] md:h-[65vh] lg:h-[80vh]">
             <motion.img
               variants={iconVariants(3)}
               initial="initial"
               animate="animate"
-              //   initial={{ x: 100, opacity: 0 }}
-              //   animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
-              className="shadow-lg shadow-gray-500"
+              className="w-full max-w-xs sm:max-w-sm md:max-w-md object-contain"
               src={profilePic}
               alt="Apoorv Gupta"
             />
           </div>
-        </div>
+          </div>
       </div>
     </div>
   );

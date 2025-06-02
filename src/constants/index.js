@@ -1,14 +1,16 @@
 // import project1 from "../assets/projects/project-1.jpg";
-import CD from "../assets/projects/myproject.png";
-import hungry from "../assets/projects/todo.png";
+import store_home from "../assets/projects/myproject.png";
+import todo from "../assets/projects/todo.png";
 import portfolio from "../assets/projects/portfolio.png";
+import quote from "../assets/projects/quoteapi.png";
+import tictactoe from "../assets/projects/tictactoe.png";
 
-export const HERO_CONTENT = `I am a passionate FrontEnd developer with a talent for crafting responsive and maintainable web applications.With 1+ years of hands-on experience in modern JavaScript frameworks like React, Next, Redux, and a strong background in integrating RESTful APIs, I aim to leverage my skills to create innovative and user-centric solutions that enhance productivity and user engagement.`;
+export const HERO_CONTENT = `I am a passionate FrontEnd developer with a talent for crafting responsive and maintainable web applications.With 1 year 4 months of hands-on experience in modern JavaScript frameworks like React, Next, Redux, and a strong background in integrating RESTful APIs, I aim to leverage my skills to create innovative and user-centric solutions that enhance productivity and user engagement.`;
 export const ABOUT_TEXT = `I am a Software Engineer with a passion for crafting seamless, user-focused web applications that drive both business growth and customer satisfaction. With a solid foundation in React.js, Next.js, and state management tools like Redux Toolkit, I specialize in building responsive and scalable solutions that deliver exceptional performance across devices.
 Currently at Visionet Systems, I focus on optimizing front-end performance using cutting-edge techniques like lazy loading, dynamic imports, and prefetching. I take pride in creating dynamic, accessible interfaces using React.js, Tailwind CSS, and robust design systems, ensuring compliance with WCAG guidelines for inclusivity. My expertise in automated testing with tools like Cypress and Jest ensures high-quality, stable code that reduces production bugs and accelerates delivery timelines.
 Previously at Accenture, I collaborated with cross-functional teams to build reusable React components, design intuitive user experiences, and integrate RESTful APIs for dynamic, data-driven web applications. My contributions led to significant improvements in productivity, user interaction speeds, and application maintainability.
 In addition to professional roles, I have spearheaded innovative projects like a Cinematic Database and an E-Commerce Platform, where I implemented advanced features such as search, filtering, and real-time updates, enhancing user engagement and functionality.
-My technical skill set spans JavaScript (ES6+), HTML5, CSS3, Node.js, Redux, Airtable APIs, and modern frameworks like Tailwind CSS and Storybook. I’m also experienced with performance optimization, dynamic workflows, and Agile collaboration.
+My technical skill set spans JavaScript (ES6+), HTML5, CSS3, Node.js, Redux, Rest APIs, and modern frameworks like Tailwind CSS and Storybook. I’m also experienced with performance optimization, dynamic workflows, and Agile collaboration.
 What excites me most is the opportunity to combine my technical expertise with creative problem-solving to deliver impactful solutions that meet both user needs and business objectives. When I’m not coding, I’m exploring new technologies, learning about design systems, or diving into a good tech blog.`;
 
 export const EXPERIENCES = [
@@ -79,24 +81,51 @@ Employed Cluster.js for efficient multi-process management, improving applicatio
 export const PROJECTS = [
   {
     title: "Store@Home",
-    image: CD,
+    image: store_home,
+    link: "https://storeathome.netlify.app/",
     description:
       "A Interactive platform designed to provide users with a comprehensive and engaging movie discovery experience. Built using ReactJS, this application showcases a modern and visually appealing user interface that simplifies the process of finding and exploring movies.",
     technologies: ["HTML", "TailwindCSS", "React", "Redux", "JavaScript"],
   },
   {
     title: "Todo List",
-    image: hungry,
+    image: todo,
+    link: "https://todocontextlocalusingvite.netlify.app",
     description:
       "A modern food delivery platform designed to provide users with a seamless and intuitive experience when browsing restaurant menus, placing orders, and tracking deliveries.",
-    technologies: ["HTML", "CSS", "React", "JavaScript"],
+    technologies: ["HTML", "CSS", "React", "JavaScript", "React-Redux"],
   },
+  {
+    title: "Random Quote Generator",
+    image: quote,
+    link: "https://randomquotegeneratorusingapi.netlify.app",
+    description:
+      "A minimalist web app that fetches and displays random quotes from a public API. Built using HTML, CSS, and JavaScript, this project demonstrates the use of asynchronous API calls and dynamic content rendering to inspire users with a new quote on each click.",
+    technologies: ["HTML", "CSS", "JavaScript", "REST API"],
+  },
+  {
+    title: "TitTac",
+    image: tictactoe,
+    link: "https://tictactoemine.netlify.app",
+    description:
+      "A classic Tic Tac Toe game built with HTML, CSS, and JavaScript, allowing two players to compete in a simple and intuitive interface. The app features turn-based logic, win detection, and game reset functionality, providing a seamless user experience.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+
   {
     title: "Portfolio Website",
     image: portfolio,
+    link: "https://portfolio-lxox.vercel.app/",
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Tailwind", "Framer Motion"],
+    technologies: [
+      "HTML",
+      "CSS",
+      "React",
+      "Tailwind",
+      "Framer Motion",
+      "Locomotive JS",
+    ],
   },
 ];
 
